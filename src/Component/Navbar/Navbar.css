@@ -1,0 +1,117 @@
+.navbar-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.logo-title{
+    font-size: 38px;
+    font-weight: 500;
+    font-style: oblique;
+    padding: 0;
+    letter-spacing: 2px;
+}
+.logo-sub-title{
+    color: #DA7C25;
+    padding: 0;
+    font-style: italic;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.2s;
+}
+.nav-menu li:hover{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.01);
+}
+.nav-menu li a:hover{
+    border-bottom: 3px solid #DA7C25;
+    transition: 0.4s ease-in-out;
+    transform: scale(1.01);
+}
+.nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #e1a223 102.06%);
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.nav-connect a{
+    text-decoration: none;
+    color: white;
+}
+.menu-open{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+.menu-close{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+@media(max-width:760px){
+    .navbar{
+        /* display: flex; */
+        margin: auto;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-menu{
+        /* display: none; */
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 20px;
+        /* background-image:linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./imagess/travel-image1.jpg); */
+        /* background-color: linear-gradient(rgba(224, 145, 9, 1),rgba(0,0,0,0.7), rgba(0,0,0,0.7)); */
+        background-color: rgba(224, 145, 9, 0.5) ;
+        width: 350px;
+        z-index: 2;
+        transition: 0.5s;
+        right: -350px;
+        height: 100%;
+    }
+    .menu-open{
+        display: block;
+        float: right;
+    }
+    .menu-close{
+        display: block;
+        /* position: relative; */
+        top: 50px;
+        left: 290px;
+        /* width: 30px; */
+    }
+    .nav-menu li{
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+}
