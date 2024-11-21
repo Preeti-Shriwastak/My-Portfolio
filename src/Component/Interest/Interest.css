@@ -26,15 +26,17 @@
     justify-content: center;
     margin: auto;
     gap: 50px;
+   
 }
 
 .service-formate{
     border: 2px solid white;
     border-radius: 10px;
-    padding: 30px;
-    gap: 20px;
+    padding: 20px;
+    gap: 10px;
     transition: 0.4s;
     cursor: pointer;
+    width: 100%;
 }
 .service-formate h3{
     font-size: 25px;
@@ -42,7 +44,7 @@
 }
 .service-formate h2{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     background: linear-gradient(267deg, #db6f0b 0.36%, #e9a722 102.06%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -50,7 +52,7 @@
 }
 .service-formate p{
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 40PX;
 }
 .service-formate:hover{

@@ -72,15 +72,28 @@
 .contact-form input::placeholder{
     color: rgb(88, 89, 91);
 }
+.contact-form input:focus{
+    outline: none;
+    border: none;
+    background-color: #32323c;
+}
+
 .contact-form textarea{
     height: 200px;
     background-color: #32323c;
     font-size: 22px;
     border: none;
     padding: 20px;
+    color: aliceblue;
 }
 .contact-form textarea::placeholder{
     color: rgb(88, 89, 91);
+}
+.contact-form textarea:focus{
+    outline: none;
+    border: none;
+    background-color: #32323c;
+    color: aliceblue;
 }
 
 .contact-btn {
